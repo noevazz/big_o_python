@@ -55,14 +55,14 @@ What matters in O(1) is that it takes a constant number of steps.
 
 ## Logarithmic Time
 
-First to all... what is a logarithm: basically it is the inverse function to exponentation.\
+First to all... what is a logarithm?: basically it is the inverse function to exponentation.\
 Example: How many 2s do we multiply to get 8?\
 Answer: 2 × 2 × 2 = 8, so we had to multiply 3 of the 2s to get 8\
 So the logarithm is 3\
 ![logarithm of 8 base 2](https://github.com/noevazz/big_o_python/blob/master/img/logarithm.png)
 
 
-## Linear
+## Linear Time
 
 ```python
 def linear_addition(*numbers):
@@ -74,3 +74,22 @@ def linear_addition(*numbers):
 print(linear_addition(1,3,4))
 # result in terminal: 8
 ```
+
+Linear time algorithms mean that every single element from the input is visited exactly once, O(n) times.
+
+## Polynomial Time
+
+If one loop through a list is O(n), 2 loops must be O(n2). For each loop, we go over the list once.\
+For each item in that list, we go over the entire list once. Resulting in n2 operations
+
+```python
+a = [1, 2, 3, 4, 5]
+for i in a:
+    for x in a:
+        print("* ", end="")
+    print()
+```
+
+Bubblesort is a good example of an O(n2) algorithm.
+
+## Exponential Time
