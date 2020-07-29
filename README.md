@@ -5,6 +5,8 @@ This knowledge lets us design better algorithms.\
 
 ## Measuring The Time For An Algorithm In Python
 
+- WIP
+
 ## About The Big O Notation
 
 Big O takes the upper bound execution of an algorithm, e.g. an infinite list.\
@@ -37,6 +39,8 @@ Asymptotic Notation
 
 But let's focuse only in Big O.
 
+![Order Of Growth](https://github.com/noevazz/big_o_python/blob/master/img/bigO.png)
+
 ## Constant Time
 
 Constant algorithms do not scale with the input size, they are constant no matter how big the input.\
@@ -54,7 +58,8 @@ What matters in O(1) is that it takes a constant number of steps.
 First to all... what is a logarithm: basically it is the inverse function to exponentation.\
 Example: How many 2s do we multiply to get 8?\
 Answer: 2 × 2 × 2 = 8, so we had to multiply 3 of the 2s to get 8\
-So the logarithm is 3\
+So the logarithm is 3
+![logarithm of 8 base 2](https://github.com/noevazz/big_o_python/blob/master/img/logarithm.png)
 
 
 ## Linear
