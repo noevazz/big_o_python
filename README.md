@@ -75,6 +75,8 @@ again taking the middle element to compare to the target value, and repeating th
 is found. If the search ends with the remaining half being empty, the target is not in the array. 
 
 ```python
+# note this program is not able to check numbers that are not present in the list
+
 my_list = list(range(3, 28, 2)) # so my_list = 3, 5, 7, 9...27
 
 def bisect(search_this, my_list):
@@ -90,7 +92,9 @@ def bisect(search_this, my_list):
         elif my_list[mid] > search_this:
             high = mid-1
         mid = (low+high)//2
-    return f"{search_this} is at index {mid}, my_list[{mid}]={my_list[mid]}, numer of search={counter}"
+        if my_list[low] > search_this or my_list[high] < search_this:
+            return f"{search_this} is not in the list"
+    return f"{search_this} is at index {mid}, my_list[{mid}]={my_list[mid]}, number of search={counter}"
 
 print(f"Searching in this array: {my_list}")
 print(bisect(3, my_list))
@@ -98,6 +102,8 @@ print(bisect(5, my_list))
 print(bisect(11, my_list))
 print(bisect(25, my_list))
 print(bisect(19, my_list))
+print(bisect(16, my_list))
+
 print("end")
 ```
 The algorithm halves the input every single time it iterates. Therefore it is logarithmic.
