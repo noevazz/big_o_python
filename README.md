@@ -1,11 +1,11 @@
 # Big O Notation Using Python Examples
 
 Big O notation is a method for determining how efficient an algorithm is.\
-This knowledge lets us design better algorithms.\
+This knowledge lets us design better algorithms.
 
 ## About The Big O Notation
 
-Eefficiency is classified by the relation of a large input (denoted by "n" in Big O notation) and the numbers of operations required by the algorithm.
+Efficiency is classified by the relation of a large input (denoted by "n" in Big O notation) and the numbers of operations required by the algorithm.
 
 ### Big O Notation's Order Of Growth
 
