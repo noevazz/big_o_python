@@ -45,7 +45,7 @@ def constant_addition(x, y):
     return x+y
 ```
 
-Adding bigger numbers may take more physical time, bu what matters in O(1) is that it takes a constant number of operations.
+Adding larger numbers can take more physical time, but what matters in O (1) is what requires a constant number of operations.
 
 ## Logarithmic Time
 
