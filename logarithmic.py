@@ -1,5 +1,3 @@
-# note this program is not able to check numbers that are not present in the list
-
 my_list = list(range(3, 28, 2)) # so my_list = 3, 5, 7, 9...27
 
 def bisect(search_this, my_list):

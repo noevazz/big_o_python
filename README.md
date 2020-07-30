@@ -22,7 +22,7 @@ it doesn't really matter since we are considering the worst escenario.
 |    O(1)    |   O(log n)  |   O(n)   |  O(n^2),O(n^3),O(n^x)  |      O(2^n)    |
 ---------------------------------------------------------------------------------
 ```
-Being constant the fastest of all Big O time complexities and Exponentional the slowest.\
+Being constant the fastest of all Big O time complexities and Exponentional the slowest.
 
 Other asymptotic (time-measuring) notations are:
 
@@ -75,8 +75,6 @@ again taking the middle element to compare to the target value, and repeating th
 is found. If the search ends with the remaining half being empty, the target is not in the array. 
 
 ```python
-# note this program is not able to check numbers that are not present in the list
-
 my_list = list(range(3, 28, 2)) # so my_list = 3, 5, 7, 9...27
 
 def bisect(search_this, my_list):
