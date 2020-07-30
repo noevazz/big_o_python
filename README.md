@@ -1,7 +1,7 @@
 # Big O Notation Using Python Examples
 
 Big O notation is a method for determining how fast an algorithm is.\
-This knowledge lets us design better algorithms.\
+This knowledge lets us design better algorithms.
 
 ## Measuring The Time For An Algorithm In Python
 
@@ -58,11 +58,11 @@ What matters in O(1) is that it takes a constant number of steps.
 First to all... what is a logarithm?: basically it is the inverse function to exponentation.\
 Example: How many 2s do we multiply to get 8?\
 Answer: 2 × 2 × 2 = 8, so we had to multiply 3 of the 2s to get 8\
-So the logarithm is 3\
+So the logarithm is 3
 
 ![logarithm of 8 base 2](https://github.com/noevazz/big_o_python/blob/master/img/logarithm.png)
 
-Now, let's discuss another short thing before jumping into O(log n):\
+Now, let's discuss another short thing before jumping into O(log n):
 
 ### Binary Search
 
@@ -159,13 +159,13 @@ First let's learn what a combination is:
 
 ### Combinations
 
-Having 4 teams in a football cup (A, B, C and D), what are the possible matches that define the last game:\
-1. A vs B\
-2. A vs C\
-3. A vs D\
-4. B vs C\
-5. B vs D\
-6. C vs D\
+Having 4 teams in a football cup (A, B, C and D), what are the possible matches that define the last game:
+1. A vs B
+2. A vs C
+3. A vs D
+4. B vs C
+5. B vs D
+6. C vs D
 \
 The equation is:\
 nCr = n! / ( (n-r)!*r! )\
@@ -176,10 +176,12 @@ nCr = n! / ( (n-r)!*r! )\
 
 ### Permutations
 Having 4 teams in a football cup (A, B, C and D), how many possibilities we have for a champ and a subchamp:\
-A champ & B sub-champ   B champ & A sub-champ   C champ & A sub-champ   D champ & A sub-champ\
-A champ & C sub-champ   B champ & C sub-champ   C champ & B sub-champ   D champ & B sub-champ\
-A champ & D sub-champ   B champ & D sub-champ   C champ & D sub-champ   D champ & C sub-champ\
-\
+```
+A champ & B sub-champ   B champ & A sub-champ   C champ & A sub-champ   D champ & A sub-champ
+A champ & C sub-champ   B champ & C sub-champ   C champ & B sub-champ   D champ & B sub-champ
+A champ & D sub-champ   B champ & D sub-champ   C champ & D sub-champ   D champ & C sub-champ
+```
+
 answer = 12\
 \
 The equation is:\
@@ -199,8 +201,10 @@ You can perform a brute-force attack and guess each permutation:
 012342\
 012341\
 etc..\
+\
 So the number of permutations is:\
 10P6 = 10! / (10-6!)\
 10P6 = 3628800 / 24\
 10P6 = 151200\
+\
 151200 Permutations!!!!
