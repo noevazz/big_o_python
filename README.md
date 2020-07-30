@@ -1,17 +1,11 @@
 # Big O Notation Using Python Examples
 
-Big O notation is a method for determining how fast an algorithm is.\
-This knowledge lets us design better algorithms.
-
-## Measuring The Time For An Algorithm In Python
-
-- WIP
+Big O notation is a method for determining how efficient an algorithm is.\
+This knowledge lets us design better algorithms.\
 
 ## About The Big O Notation
 
-Big O takes the upper bound execution of an algorithm, e.g. an infinite list.\
-Instead of saying the input is, for example 10 billion, or infinite, we say the input is "n" size,\
-it doesn't really matter since we are considering the worst escenario.
+Eefficiency is classified by the relation of a large input (denoted by "n" in Big O notation) and the numbers of operations required by the algorithm.
 
 ### Big O Notation's Order Of Growth
 
@@ -51,7 +45,7 @@ def constant_addition(x, y):
     return x+y
 ```
 
-What matters in O(1) is that it takes a constant number of steps.
+Adding bigger numbers may take more physical time, bu what matters in O(1) is that it takes a constant number of operations.
 
 ## Logarithmic Time
 
